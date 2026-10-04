@@ -38,7 +38,9 @@ pipeline {
             }
         }
         stage('Deploy to Production') {
-            echo "Deploy the application to a production server so it can be accessed by end-users. AWS EC2 is often used to host web applications."
+            steps {
+                echo "Deploy the application to a production server so it can be accessed by end-users. AWS EC2 is often used to host web applications."
+            }
         }
     }
 }
